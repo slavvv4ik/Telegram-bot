@@ -1,0 +1,13 @@
+# Дополнительно создай файл render.yaml:
+services:
+  - type: web
+    name: rome-facts-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8558443443:AAEprU98Nt_iuCkwKhZJQ1Ps0XSBwEp_LAY
+      - key: DEEPSEEK_API_KEY  
+        value: AIzaSyClz2gEedj4eAjfE0S9VWIy1pgEUNWIPw4
